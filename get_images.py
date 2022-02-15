@@ -8,11 +8,11 @@ def getdata(url):
 sources = []
     
 htmldata = getdata("https://generated.photos/faces/female") 
-soup = BeautifulSoup(htmldata, 'html.parser') 
+soup = BeautifulSoup(htmldata, "html.parser") 
 
 f = open("components/home/data/scores.txt", "a")
 
-for item in soup.find_all('img'):
+for item in soup.find_all("img"):
     source = item["src"]
     formated_source = source.replace("https://images.generated.photos/", "")
     formated_source = formated_source.replace(".jpg", "")
