@@ -3,3 +3,4 @@ regex
 datetime
 peewee
 requests
+bs4
